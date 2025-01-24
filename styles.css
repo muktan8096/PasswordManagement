@@ -1,0 +1,88 @@
+/* styles.css */
+body {
+    font-family: 'Courgette', cursive; /* Soft, whimsical font */
+    background-color: #f8e1f4; /* Light pink background */
+    color: #6b3f6a; /* Purple text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #f5d0e3;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 182, 193, 0.5);
+    width: 300px;
+    position: relative;
+}
+
+/* Flower and bow-themed background */
+.container::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    background: url('https://www.pngall.com/wp-content/uploads/4/Flower-PNG-Image.png') no-repeat center;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+}
+
+.container::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Blue_bow.png/800px-Blue_bow.png') no-repeat center;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+}
+
+/* Styling the input fields */
+input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #fce8f1; /* Light pink for inputs */
+    color: #6b3f6a;
+    border: 1px solid #d1a7c5;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+button {
+    width: 80%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #ff8cff; /* Light purple for buttons */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #ff56cc;
+}
+
+/* Password output styling */
+#message {
+    color: #6b3f6a;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#form-container {
+    margin-bottom: 20px;
+}
+
+button:focus {
+    outline: none;
+}
